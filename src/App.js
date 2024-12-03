@@ -7,6 +7,8 @@ import Description from "./Description";
 import Image from "./Image";
 
 const App = () => {
+  // Create greeting message based on the presence of the first name
+
   const firstName = "Marius";
   const greeting = firstName ? `Hello, ${firstName}!` : "Hello, there!";
 
@@ -27,6 +29,7 @@ const App = () => {
       <Row>
         <Col md={12} className="mb-4">
           <Card className="text-center bg-secondary ">
+            {/* Image, Name, Price, and Description components displaying respective details */}
             <Card.Body>
               <Image />
               <Name />

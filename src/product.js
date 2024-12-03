@@ -1,3 +1,5 @@
+// product object
+
 const product = {
   name: "Mercedes Benz Brabus G-Wagon",
   price: 290000,
