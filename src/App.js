@@ -1,4 +1,3 @@
-// src/App.js
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Container, Row, Col } from "react-bootstrap";
@@ -8,7 +7,7 @@ import Description from "./Description";
 import Image from "./Image";
 
 const App = () => {
-  const firstName = "John"; // Change this to your first name or leave it as an empty string
+  const firstName = "Marius";
   const greeting = firstName ? `Hello, ${firstName}!` : "Hello, there!";
 
   return (
@@ -16,8 +15,16 @@ const App = () => {
       className="d-flex flex-column justify-content-center align-items-center"
       style={{ minHeight: "100vh" }}
     >
+      <h4 className="mt-4 mb-3">{greeting}</h4>
+      {firstName && (
+        <img
+          src="https://via.placeholder.com/50"
+          alt="Your Avatar"
+          className="rounded-circle mb-3"
+        />
+      )}
       <Row>
-        <Col md={6} className="mb-4">
+        <Col md={12} className="mb-4">
           <Card className="text-center">
             <Card.Body>
               <Image />
@@ -28,14 +35,6 @@ const App = () => {
           </Card>
         </Col>
       </Row>
-      <h4 className="mt-4">{greeting}</h4>
-      {firstName && (
-        <img
-          src="https://via.placeholder.com/50"
-          alt="Your Avatar"
-          className="rounded-circle mt-3"
-        />
-      )}
     </Container>
   );
 };
