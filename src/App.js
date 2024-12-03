@@ -12,20 +12,21 @@ const App = () => {
 
   return (
     <Container
-      className="d-flex flex-column justify-content-center align-items-center"
+      className="d-flex flex-column justify-content-center align-items-center "
       style={{ minHeight: "100vh" }}
     >
       <h4 className="mt-4 mb-3">{greeting}</h4>
       {firstName && (
         <img
-          src="https://via.placeholder.com/50"
-          alt="Your Avatar"
-          className="rounded-circle mb-3"
+          src="https://i.ebayimg.com/images/g/094AAOSwt6NbwCWh/s-l1200.jpg"
+          alt="Benz Brabus Logo"
+          className="rounded-circle mb-3 "
+          style={{ width: "100px", height: "100px" }}
         />
       )}
       <Row>
         <Col md={12} className="mb-4">
-          <Card className="text-center">
+          <Card className="text-center bg-secondary ">
             <Card.Body>
               <Image />
               <Name />

@@ -1,8 +1,9 @@
 const product = {
-  name: "Awesome Product",
-  price: 29.99,
-  description: "This is an amazing product that you will love!",
-  image: "https://via.placeholder.com/150",
+  name: "Mercedes Benz Brabus G-Wagon",
+  price: 290000,
+  description: "This is an amazing car that you will love!",
+  image:
+    "https://douradocars.com/wp-content/uploads/2023/10/DSC01894-scaled.webp",
 };
 
 export default product;
